@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: mainFont;
+  src: url("../src/assets/fonts/iranyekanwebmedium.2d4f96e5.woff");
+}
+* {
+  font-family: mainFont;
+}
+body {
+  overflow: auto;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  background: #2193b0;
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
+
+.isAnswered,
+.isCorrect,
+.isFalse {
+  width: 250px;
+  height: 250px;
+  margin: 20px 15px;
+  padding: 0 5px;
+  background-color: #3a3a8c;
+  border-radius: 8px;
+}
+.isAnswered {
+  border: 2px solid #ffff00;
+}
+.isCorrect {
+  background-color: #2e8b57;
+  border: 2px solid #3a3a8c;
+}
+.isFalse {
+  background-color: #ff0000;
+  border: 2px solid #3a3a8c;
+}

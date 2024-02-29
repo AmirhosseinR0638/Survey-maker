@@ -213,7 +213,7 @@
           <img
             src="../assets/images/cancel_presentation_FILL0_wght400_GRAD0_opsz24.png"
             alt="بستن"
-            title="بسن"
+            title="بستن"
           />
         </button>
         <h2>نتایج پرسشنامه</h2>
@@ -250,7 +250,7 @@
           }
         </h4>
         <h4>
-          نمره (از100): <span>{{ grade.toFixed(2) }}</span>
+          نمره : <span>{{ grade | percent : ".0-2" }}</span>
         </h4>
         <h4>
           وضعیت نمره: <span>{{ gradeSituation }}</span>

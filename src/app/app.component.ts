@@ -172,9 +172,11 @@ export class AppComponent {
     }
     this.trueMCQFrequency = this.trueMCQIndex.length;
     this.trueWQFrequency = this.trueWQIndex.length;
-    this.grade =
-      (this.trueMCQFrequency + this.trueWQFrequency) /
-      (this.MCQArray.length + this.WQArray.length);
+    this.grade = +(
+      ((this.trueMCQFrequency + this.trueWQFrequency) /
+        (this.MCQArray.length + this.WQArray.length)) *
+      100
+    ).toPrecision(4);
     if (this.grade == 100) {
       this.gradeSituation = 'بسیارعالی';
     } else if (this.grade >= 80 && this.grade < 100) {
